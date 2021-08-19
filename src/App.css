@@ -39,7 +39,6 @@
 }
 
 .boxesSpace {
-  height: 500px;
   border: 1px solid;
   overflow: auto;
 }
@@ -50,6 +49,12 @@
   margin: 20px;
   padding: 10px;
   float: left;
+}
+
+.Comment{
+  border: solid 1px;
+  margin: 10px;
+  width: 500px;
 }
 
 ul {
