@@ -8,8 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      commentBoxes: [],
-      commentBoxId: 0
+      commentBoxes: []
     };
   }
 
@@ -26,7 +25,7 @@ class App extends Component {
     })
     .then(response => response.json())
     .then(data => {
-      this.setState({commentBoxes: data.map(data => data)})
+      return this.setState({commentBoxes: data.map(data => data)})
     })
   }
 
